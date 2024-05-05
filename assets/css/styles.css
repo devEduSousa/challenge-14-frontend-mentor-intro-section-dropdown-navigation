@@ -29,6 +29,7 @@ li {
 #container {
     max-width: 425px;
     margin: auto;
+    margin-top: 0;
     position: relative;
     overflow: hidden;
 }
@@ -167,7 +168,7 @@ header #menu-desktop .desktop-nav .main-ul .suboptions.desktop-suboptions li {
 }
 
 header #menu-desktop .desktop-nav .main-ul .suboptions.desktop-suboptions li img {
-    width: 15px;
+    width: 10px;
 }
 
 main {
@@ -179,7 +180,7 @@ main {
 main .banner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
 }
 
@@ -207,10 +208,11 @@ main .content .content-body {
 }
 
 main .content .content-body h1 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 main .content .content-body p {
+    font-size: 13px;
     text-align: center;
     padding: 0 20px;
     margin: auto;
@@ -226,6 +228,7 @@ main .content .content-body a {
     padding: 20px 25px;
     border-radius: 20px;
     font-weight: 500;
+    font-size: 13px;
 }
 
 main .content .content-footer {
@@ -236,12 +239,25 @@ main .content .content-footer {
 }
 
 main .content .content-footer .client-logo {
-    width:60px;
+    width:50px;
 }
 
 @media(min-width: 350px) {
     #menu-opened {
         width: 240px;
+    }
+
+    main .content .content-body h1 {
+        font-size: 36px;
+    }
+
+    main .content .content-body p,
+    main .content .content-body a {
+        font-size: 16px;
+    }
+
+    main .content .content-footer .client-logo {
+        width:60px;
     }
 }
 
@@ -262,6 +278,7 @@ main .content .content-footer .client-logo {
     
     #container {
         background-color: hsl(0, 0%, 98%);
+        margin: auto;
         max-width: 100%;
     }
 
@@ -328,7 +345,6 @@ main .content .content-footer .client-logo {
     }
     
     main .banner .desktop-bg {
-        width: 90%;
         display: inline;
         text-align: center;
     } 
@@ -356,8 +372,8 @@ main .content .content-footer .client-logo {
 @media(min-width: 1000px) {
     span,
     #container header #menu-desktop .buttons .login-btn-desktop, 
-    #container header #menu-desktop .buttons .register-btn-desktop {
-        font-size: 16px;
+    #container header #menu-desktop .buttons .register-btn-desktop,
+    main .content .content-body a {
         transition: .3s;
     }
 
@@ -365,11 +381,28 @@ main .content .content-footer .client-logo {
     #container header #menu-desktop .buttons .login-btn-desktop:hover, 
     #container header #menu-desktop .buttons .register-btn-desktop:hover {
         color: hsl(0, 0%, 8%);
+        border-color: hsl(0, 0%, 8%);
     }
 
-    
+    main .content .content-body a:hover {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000;
+    }
 
-    
+    main .content {
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+
+    main .banner .desktop-bg {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    main .content .content-body h1 {
+        font-size: 64px;
+    }
 }
 
 @media(min-width: 1400px) {
@@ -382,15 +415,23 @@ main .content .content-footer .client-logo {
         gap: 30px;
     }
 
-    header #menu-desktop .desktop-nav .main-ul .topics {
+    header #menu-desktop .desktop-nav .main-ul .suboptions.desktop-suboptions {
+        gap: 20px;
+        padding: 20px;
         margin-top: 20px;
     }
 
-    header #menu-desktop .desktop-nav .main-ul .topics.topics-first {
-        margin-left: -75px;
+    header #menu-desktop .desktop-nav .main-ul .suboptions.desktop-suboptions li img {
+        width: 15px;
     }
 
-    #container header #menu-desktop .desktop-nav .main-ul li span {
+    header #menu-desktop .desktop-nav .main-ul .suboptions.desktop-suboptions.first {
+        margin-left: -65px;
+    }
+
+    #container header #menu-desktop .desktop-nav .main-ul li span,
+    #container header #menu-desktop .buttons .login-btn-desktop, 
+    #container header #menu-desktop .buttons .register-btn-desktop {
         font-size: 16px;
     }
 
@@ -414,7 +455,6 @@ main .content .content-footer .client-logo {
     }
 
     main .content {
-        margin-top: 30px;
         margin-left: 160px;
     }
 
@@ -425,7 +465,6 @@ main .content .content-footer .client-logo {
 
     main .content .content-body p {
         margin: 20px 100px 40px 0
-        /* margin-right: 100px; */
     }
 
     main .content .content-footer {
