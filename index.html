@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <script src="./assets/js/scripts.js" defer></script>
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="background" class="hide"></div>
+
+            <div id="menu-opened">
+                <div class="close-icon">
+                    <img src="./assets/images/icon-close-menu.svg" alt="close icon">
+                </div>
+                <nav class="mobile-nav">
+                    <ul class="main-ul">
+                        <li>
+                            <div class="title-option">
+                                <span>Features</span>
+                                <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="arrow">
+                            </div>
+                            <ul class="suboptions mobile-suboptions">
+                                <li>
+                                    <img src="./assets/images/icon-todo.svg" alt="todo icon">
+                                    <p>Todo List</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/icon-calendar.svg" alt="calendar icon">
+                                    <p>Calendar</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/icon-reminders.svg" alt="reminders icon">
+                                    <p>Reminders</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/icon-planning.svg" alt="planning icon">
+                                    <p>Planning</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title-option">
+                                <span>Company</span>
+                                <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="arrow">
+                            </div>
+                            <ul class="suboptions mobile-suboptions">
+                                <li>History</li>
+                                <li>Our Team</li>
+                                <li>Blog</li>
+                            </ul>
+                        </li>
+                        <li>Careers</li>
+                        <li>About</li>
+                    </ul>
+                    <button class="login-btn remove-border">Login</button>
+                    <button class="register-btn">Register</button>
+                </nav>
+            </div>
+
+            <header>
+                <img class="logo" src="./assets/images/logo.svg" alt="logo">
+                <div id="menu-desktop">
+                    <nav class="desktop-nav">
+                        <ul class="main-ul">
+                            <li>
+                                <div class="title-option">
+                                    <span>Features</span>
+                                    <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="arrow">
+                                </div>
+                                <ul class="suboptions desktop-suboptions first">
+                                    <li>
+                                        <img src="./assets/images/icon-todo.svg" alt="todo icon">
+                                        <span>Todo List</span>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/icon-calendar.svg" alt="calendar icon">
+                                        <span>Calendar</span>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/icon-reminders.svg" alt="reminders icon">
+                                        <span>Reminders</span>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/icon-planning.svg" alt="planning icon">
+                                        <span>Planning</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="title-option"> 
+                                    <span>Company</span>
+                                    <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="arrow">
+                                </div>
+                                <ul class="suboptions desktop-suboptions">
+                                    <li>
+                                        <span>History</span>
+                                    </li>
+                                    <li>
+                                        <span>Our Team</span>
+                                    </li>
+                                    <li>
+                                        <span>Blog</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Careers</span>
+                            </li>
+                            <li>
+                                <span>About</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="buttons">
+                        <button class="login-btn-desktop remove-border">Login</button>
+                        <button class="register-btn-desktop">Register</button>
+                    </div>
+                </div>
+                <img class="open-icon" src="./assets/images/icon-menu.svg" alt="icon menu">
+            </header>
+
+            <main>
+                <section class="banner">
+                    <img src="./assets/images/image-hero-mobile.png" alt="" class="mobile-bg">
+                    <img src="./assets/images/image-hero-desktop.png" alt="" class="desktop-bg">
+                </section>
+
+                <section class="content">
+                <section class="content-body">
+                    <h1>Make remote work</h1>
+                    <p>
+                        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+                    </p>
+                    <a href="#">Learn more</a>
+                </section>
+    
+                <section class="content-footer">
+                    <img class="client-logo" src="./assets/images/client-databiz.svg" alt="databiz logo">
+                    <img class="client-logo" src="./assets/images/client-audiophile.svg" alt="audiophile logo">
+                    <img class="client-logo" src="./assets/images/client-meet.svg" alt="meet logo">
+                    <img class="client-logo" src="./assets/images/client-maker.svg" alt="maker logo">
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
